@@ -1,0 +1,174 @@
+body{
+	background-color: #ffae42;
+	padding:0px;
+	margin:0px;
+	color: darkred;
+	font-family: cambria;
+}
+
+
+a{
+	color: darkgreen;
+	text-decoration:none;
+	cursor:pointer;
+	font-family: cambria;
+}
+
+.bgImg img{
+	position:fixed;
+	z-index:-1;
+	height:100%;
+	width:100%;
+	text-align:center;
+	left:0px;
+	right:0px;
+}
+
+.navtitle h1,.navtitle h3{
+}
+
+.navtitle{
+	padding:10px;
+	margin:0px;
+	background-color: darkorange;
+}
+
+.navtitleA{
+	width:100%;
+	height:30px;
+	position:fixed;
+	display:grid;
+	
+	grid-template-columns:1fr 1fr 1fr 5fr;
+}
+/*
+
+???[what's happening]???
+
+*/
+.navtitleA:hover .navbuttons{
+	opacity:1;
+	transition:300ms;
+}
+
+.navtitlehome button:hover .navtitlehome button{
+	background-color:rgb(255,239,136);
+	color:rgb(208,165,1);
+}
+
+.navtitleevents button:hover .navtitleevents button{
+	background-color:rgb(255,239,136);
+	color:rgb(208,165,1);
+}
+
+.navtitleabout button:hover .navtitleabout button{
+	background-color:rgb(255,239,136);
+	color:rgb(208,165,1);
+}
+
+.navbuttons{
+	background-color:rgb(243,227,84);
+	width:100%;
+	height:100%;
+	border:1px rgb(233,213,27) solid;
+	border-radius:10px;
+	margin:5px;
+	opacity:0;
+}
+
+.midnews{
+	display:grid;
+	grid-template-columns: 1fr 3fr 1fr;
+}
+
+.midnews div{
+	padding:5px;
+	margin:7px;
+	text-align:center;
+	background-color:gold;
+	
+	
+}
+
+.event 
+{
+
+padding: 15px 12px;
+box-sizing: border-box;
+width: 300px;
+height: 300px;
+float: left;
+	
+}
+.event img
+{
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.text
+{
+	color: green;
+	font-family: helvetica;
+}
+
+.eventtwo
+{
+
+padding: 15px 12px;
+box-sizing: border-box;
+width: 300px;
+height: 300px;
+float: right;
+	
+}
+.eventtwo img
+{
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.texttwo
+{
+	color: green;
+	font-family: helvetica;
+
+	
+}
+.singularAd{
+	background-color:rgb(255,239,136 );
+	border-radius:4px;
+}
+
+a div h2,a div p{
+	font-color:black;
+}
+
+footer{
+	color:rgb(255,239,136);
+}
+
+@media screen and (max-width:769px){
+	.midnews{
+		display:block;
+	}
+	
+	.leftads, .rightads{
+		background-color:white;
+	}
+}
+/*
+cbddf2
+2478ed
+bbcde2
+aabcd1
+ffcb21
+
+rgb(255,251,168) bg
+rgb(255,250,153) light1
+rgb(255,239,136) light2
+rgb(249,236,85)  title
+rgb(243,227,84)  navbar
+rgb(233,213,27)  navbarborder
+rgb(218,174,1)   textdark
+*/
