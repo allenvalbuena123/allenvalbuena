@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>JS LabEx2</title>
+		
+		<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	</head>
+	<body>
+		<div class="container">
+			<div id="pane">
+				<div id="ball"></div>
+			</div>
+			<div id="controller">
+				<h1>Controls</h1>
+				
+				<div class="button-group">
+					<!-- UP ARROW -->
+					<div class="button"  onclick="moveBall('up')">
+						&uarr;
+					</div>
+				</div>
+				
+				<div class="button-group">
+					<!-- LEFT ARROW -->
+					<div class="button"  onclick="moveBall('left')">
+						&larr;
+					</div>
+					<!-- DOWN ARROW -->
+					<div class="button"  onclick="moveBall('down')">
+						&darr;
+					</div>
+					<!-- RIGHT ARROW -->
+					<div class="button"  onclick="moveBall('right')">
+						&rarr;
+					</div>
+				</div>
+
+				<br />
+				<br />
+				<br />
+				
+				<div class="button-group">
+					<div class="button red" onclick="changeColor('red')">
+						R
+					</div>
+					<div class="button green" onclick="changeColor('green')">
+						G
+					</div>
+					<div class="button blue" onclick="changeColor('blue')">
+						B
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="instructions">
+			<p>
+				Instructions
+			</p>
+			<ul>
+				<li>
+					<h3>Congratulations! You most likely have accidentally clicked on the pic so now you will be redirected to this game</h3>
+					<ul>
+						<li>it's literally just for entertainment so our website can look 3% more professional</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Yes goodluck and just press this button on the left below if you wanna go back</h3>
+					<button class = "back">
+					<h3><a href = "main_site.html">I am uninterested</a></h3>
+						<button class = "back2">
+						<h3><a href = "https://youtu.be/VOPxYwHTPSU">I am a hidden button don't press me</a></h3>
+						</button>
+					</button>
+					
+						
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			function changeColor(color)
+			{
+				console.log(color);
+				var ball = document.getElementById("ball");
+				ball.style.backgroundColor = color;
+			}
+			
+			var somt = 20;
+			var yee = 20;
+			function moveBall(position)
+			{
+				console.log(position);
+				var ball = document.getElementById("ball");
+				
+				if(position == "down")
+				{
+				somt = somt + 20;
+				ball.style.top = somt + "px";
+				}
+				else if(position == "up")
+				{
+				somt = somt - 20;
+				ball.style.top = (somt) + "px";
+				}
+				else if (position == "left")
+				{
+				yee = yee - 20;
+				ball.style.left = (yee) + "px";
+				}
+				else if (position == "right")
+				{
+				yee = yee + 20;
+				ball.style.left = yee + "px";
+				}
+			} 
+		</script>
+	</body>
+</html>
